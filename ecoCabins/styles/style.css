@@ -293,7 +293,10 @@ header.dark {
 }
 .materials__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% minmax(280px, 325px);
+    justify-content: space-between;
+    align-items: start;
+    /* grid-template-columns: repeat(2, 1fr); */
     gap: 1.25rem;
     min-width: 0;
     position: relative;
@@ -335,16 +338,19 @@ header.dark {
 }
 
 .materials__slider {
+    position: relative;
+    max-width: 325px;
+    justify-self: end;
     
 }
 .materials__wrapper {
-    width: 325px;
-    height: 366px;
+    /* width: 325px;
+    height: 366px; */
 }
 .slider-materials__slide {
     position: relative;
     z-index: 2;
-    /* aspect-ratio: 325/366; */
+    aspect-ratio: 325 / 366;
 }
 .slider-materials__slide img{
     position: absolute;
@@ -355,7 +361,7 @@ header.dark {
     object-fit: cover;
 }
 .slider-materials__pagination {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -363,6 +369,60 @@ header.dark {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 0.3125rem 1rem 0.3125rem; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+span.swiper-pagination-bullet {
+    margin: 0 !important;
+}
+.slider-materials__pagination .swiper-pagination-bullet { 
+    flex: 0 0 0.5rem; 
+    height: 0.5rem; 
+    background-color: #fff; 
+    opacity: 0.4; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    transition: opacity 0.3s; 
+   } 
+.slider-materials__pagination .swiper-pagination-bullet-active { 
+    opacity: 1; 
+   } 
+   
 
+.page__inovate {
+}
+.inovate {
+    background-color: var(--Color-Dark-green);
+    padding: 72px 0 78px 0;
+}
+.inovate__container {
+}
+.inovate__title {
+}
+.inovate__title:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+.title {
+}
+.inovate__text {
+    display: flex;
+    justify-content: space-between;
+    gap: 43px;
+}
+.inovate__text p{
+    font-family: Rubik;
+    color: var(--Greays-White);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; 
+    opacity: 0.7;
 }
