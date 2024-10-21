@@ -35,7 +35,7 @@
                         <div class="main-section__label">Duurzame tiny huisjes</div>
                         <h1 class="main-section__title title">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h1>
                     </div>
-                    <a href="#" class="main-section__video-link">Bekijk de film</a>
+                    <a href="#" id="playBtn" class="main-section__video-link">Bekijk de film</a>
                 </div>
                 <div class="main-section__image">
                     <img src="img/bg.jpg" alt="Background image">
@@ -106,8 +106,23 @@
             </div>
         </main>
         <footer class="footer">
-            
+            <div class="footer__container">
+                <a href="#" class="footer__mail">info@eco-cabins.com</a>
+                <div class="footer__logo">
+                    <img src="img/Logo.svg" alt="EcoCabins Logo" class="footer__image">
+                </div>
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"> <a href="#">Cookies</a></li>
+                    <li class="footer__menu-item"><a href="#">Privacybeleid</a></li>
+                </ul>
+            </div>
         </footer>
+        <div id="videoModal" class="modal">
+            <div class="modal__content">
+                <span class="close">&times</span>
+                <iframe id="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/eRBNnfXXF4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
