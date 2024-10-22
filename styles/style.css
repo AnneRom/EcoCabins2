@@ -229,7 +229,7 @@ header.dark {
     height: 32px;
     flex: 0 0 32px;
     border-radius: 50%;
-    background: url("/ecoCabins/img/play.svg") left no-repeat;  
+    background: url("/img/play.svg") left no-repeat;  
 }
 .main-section__image {
     position: absolute;
