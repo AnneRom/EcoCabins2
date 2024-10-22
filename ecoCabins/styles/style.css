@@ -561,7 +561,7 @@ footer {
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -576,11 +576,11 @@ footer {
     padding: 0;
     width: 80%;
     max-width: 600px;
-    background-color: var(--Greys-Light-grey);
+    background-color: transparent;
 }
 .close {
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 10px;
     color: var(--Color-Dark-green);
     background-color: var(--Greays-White);
